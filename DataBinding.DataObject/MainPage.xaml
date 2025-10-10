@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="DataBinding.DataObject.MainPage">
+
+    <VerticalStackLayout
+ Margin="32">
+        <Label
+     Text="Conteo"
+     FontSize="Medium"/>
+
+        <Border
+     Stroke="Gray"
+     Margin="0,24">
+            <Label
+         Text="0"
+         FontAttributes="Bold"
+         FontSize="Large"
+         HorizontalOptions="Center"
+         Margin="0,24"
+            x:Name="ConteoLabel"/>
+
+        </Border>
+
+        <HorizontalStackLayout
+     Spacing="32"
+     HorizontalOptions="Center"
+     Margin="0,24,0,0">
+
+            <Button
+         Text="Contar"
+         WidthRequest="130"
+         FontSize="Medium"
+            Clicked="OnContarButton_Clicked"/>
+            <Button
+         Text="Reinciar"
+         WidthRequest="130"
+         FontSize="Medium"
+            Clicked="OnReiniciarButton_Clicked"/>
+
+        </HorizontalStackLayout>
+
+    </VerticalStackLayout>
+
+</ContentPage>
