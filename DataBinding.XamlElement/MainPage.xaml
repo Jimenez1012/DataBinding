@@ -14,13 +14,11 @@
         <Label
             Text="Escriba un texto:"/>
         <Entry 
-            x:Name="UserInputEntry"
-            TextChanged="UserInputEntry_TextChanged"/>
+            x:Name="UserInputEntry"/>
         <Label
             Text="El usuario escribio:"/>
         <Label
-            x:Name="UserInputLabel"
-            Text="Aqui va a aparecer lo que escribio el usuario"
+            Text="{Binding Source={x:Reference UserInputEntry}, Path=Text}"
             HorizontalOptions="Center"
             FontAttributes="Italic"/>
 
