@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="DataBinding.XamlElement.MainPage"
+             Title="Data Binding a un elemento XAML">
+
+
+
+    <VerticalStackLayout
+        Margin="24"
+        Spacing="16">
+        
+        
+        <Label
+            Text="Escriba un texto:"/>
+        <Entry 
+            x:Name="UserInputEntry"
+            TextChanged="UserInputEntry_TextChanged"/>
+        <Label
+            Text="El usuario escribio:"/>
+        <Label
+            x:Name="UserInputLabel"
+            Text="Aqui va a aparecer lo que escribio el usuario"
+            HorizontalOptions="Center"
+            FontAttributes="Italic"/>
+
+
+    </VerticalStackLayout>
+</ContentPage>

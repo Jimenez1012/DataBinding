@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.14.36414.22 d17.14
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataBinding.XamlElement", "DataBinding.XamlElement\DataBinding.XamlElement.csproj", "{C22DB62D-6114-4319-8A8B-31F3AC221DCD}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C22DB62D-6114-4319-8A8B-31F3AC221DCD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C22DB62D-6114-4319-8A8B-31F3AC221DCD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C22DB62D-6114-4319-8A8B-31F3AC221DCD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C22DB62D-6114-4319-8A8B-31F3AC221DCD}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {3E73A5BC-058F-433E-A546-86D3C2A1A3AB}
+	EndGlobalSection
+EndGlobal
