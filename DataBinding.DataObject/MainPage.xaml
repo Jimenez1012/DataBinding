@@ -13,7 +13,7 @@
      Stroke="Gray"
      Margin="0,24">
             <Label
-         Text="0"
+         Text="{Binding Path=_Conteo}"
          FontAttributes="Bold"
          FontSize="Large"
          HorizontalOptions="Center"

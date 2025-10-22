@@ -1,4 +1,5 @@
 ﻿using DataBinding.DataObject.Models;
+using System.ComponentModel;
 
 namespace DataBinding.DataObject
 {
@@ -11,19 +12,16 @@ namespace DataBinding.DataObject
         {
             InitializeComponent();
             contador = new Contador();
-            ConteoLabel.Text = contador._Conteo.ToString();
+            this.BindingContext = contador;
         }
-
         private void OnContarButton_Clicked(object sender, EventArgs e)
         {
-            contador._Contar();
-            ConteoLabel.Text = contador._Conteo.ToString();
+            contador._Contar();            
         }
 
         private void OnReiniciarButton_Clicked(object sender, EventArgs e)
         {
-            contador.Reiniciar();
-            ConteoLabel.Text = contador._Conteo.ToString();
-        }
+            contador.Reiniciar();            
+        }              
     }
 }

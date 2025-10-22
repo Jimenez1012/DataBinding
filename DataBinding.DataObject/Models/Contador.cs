@@ -1,15 +1,12 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
+﻿using System.ComponentModel;
 
 namespace DataBinding.DataObject.Models
 {
-    public class Contador
+    public class Contador : INotifyPropertyChanged
     {
-        private int conteo;
+        private int conteo;  
+
+        public event PropertyChangedEventHandler PropertyChanged;
         public int _Conteo
         {
             get => conteo;
@@ -18,6 +15,7 @@ namespace DataBinding.DataObject.Models
                 if (conteo != value)
                 {
                     conteo = value;
+                    OnPropertyChanged(nameof(_Conteo));
                 }
             }
         }
@@ -32,6 +30,13 @@ namespace DataBinding.DataObject.Models
         public void Reiniciar()
         {
             _Conteo = 0;
+        }
+
+        private void OnPropertyChanged(string propertyName)
+
+        //if (PropertyChanged != null)
+        {
+            PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));
         }
 
     }
